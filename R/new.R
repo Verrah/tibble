@@ -132,7 +132,7 @@ validate_nrow <- function(names, lengths, nrow) {
 }
 
 update_tibble_attrs <- function(x, ...) {
-  .Call(`tibble_update_attrs`, x, pairlist2(...))
+  .Call(`tibble_update_attrs`, x, pairlist2(...), PACKAGE = "tibble")
 }
 
 tibble_class <- c("tbl_df", "tbl", "data.frame")
